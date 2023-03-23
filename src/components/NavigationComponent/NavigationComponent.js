@@ -3,14 +3,17 @@ import React from 'react';
 // import styles from './NavigationComponent.css';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import LogoSuperDev from "../../assets/images/LogoSuperDev.png";
+
 
 const NavigationComponent = () => {
   return(
     <Navbar bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand>
-          "SuperDeV"
-        </Navbar.Brand>
+      <Navbar.Brand href="#home">
+      <img src={LogoSuperDev} width= "170" height="100" className="LogoSuperDev"
+              alt="React Bootstrap logo"></img>
+          </Navbar.Brand>
         <Nav>
           <Link className="nav-link" to='/'> Home </Link>
           <Link className="nav-link" to='/Shop'> Shop </Link>
@@ -21,6 +24,7 @@ const NavigationComponent = () => {
           <Link className="nav-link" to='/Horoscope'> Horoscope</Link>
           <Link className="nav-link" to='/Login'> Login</Link>
         </Nav>
+
       </Container>
     </Navbar>
   )
