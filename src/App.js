@@ -13,7 +13,7 @@ import LoginPage from './pages/LoginPage/LoginPage';
 function App() {
   return (
     <div className="App">
-      de momento funciono
+      
       <NavigationComponent></NavigationComponent>
       <Routes>
         <Route exact path="/" element={<HomePage/>}></Route>
