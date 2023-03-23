@@ -6,7 +6,7 @@ import {
 
 const initalState ={
     posts:[],
-    loadingPosts: false,
+    loadingPosts:false,
     error: {
         message:""
     }
