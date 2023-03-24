@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import  PropTypes  from 'prop-types';
 import { Card, Container } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { getPosts } from '../../store/articles/actions';
 import { Bars } from 'react-loader-spinner';
+
 
 const MultiArticlesComponent = () => {
     
@@ -44,7 +44,7 @@ const MultiArticlesComponent = () => {
     )
 };
 
-// MultiArticleComponent.PropTypes = {};
-// MultiArticleComponent.defaultProps = {};
+// MultiArticlesComponent.PropTypes = {};
+// MultiArticlesComponent.defaultProps = {};
 
 export default MultiArticlesComponent;

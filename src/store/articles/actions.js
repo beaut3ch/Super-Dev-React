@@ -28,12 +28,12 @@ export function actionGetPostsFail(error){
 
 //Aqui petición a la Api 
 export function getPosts(){
-    return async(dispatch)=>{
+    return async (dispatch)=>{
         //empizo a pedir los post
         dispatch(actionGetPosts())
 //como es asyncrona tiene que tener un await, y hacemos un 'if else' con el try-catch.El data es el array de post que pedimos en la api, ya que si solo ponemos el response, nos dará muuucha info.
         try{
-            const response = await axios.get("https://jsonplaceholder.typicode.com/posts ")
+            const response = await axios.get("https://jsonplaceholder.typicode.com/posts")
             dispatch(actionGetPostsOk(response.data))
         }catch(error){
             dispatch(actionGetPostsFail(error))

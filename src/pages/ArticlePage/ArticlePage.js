@@ -6,8 +6,7 @@ export default function ArticlePage(){
   return(
     <Container>
       <h1> Articles Page Funcionó </h1>
-      <MultiArticleComponent> </MultiArticleComponent>
-
+      <MultiArticleComponent></MultiArticleComponent>
     </Container>
   )
 };
