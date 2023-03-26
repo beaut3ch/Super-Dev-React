@@ -10,21 +10,21 @@ export function actionGetPosts(){
     return{
         type: GET_POSTS
     }
-};
+}
 
 export function actionGetPostsOk(posts){
     return{
         type: GET_POSTS_OK,
         payload: posts
     }    
-};
+}
 
 export function actionGetPostsFail(error){
     return{
         type: GET_POSTS_FAIL,
         payload: error,
     }
-};
+}
 
 //Aqui petición a la Api 
 export function getPosts(){

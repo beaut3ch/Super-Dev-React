@@ -13,18 +13,18 @@ const initalState ={
 }
 
 
-export default function ArticlesReducer( state = initalState, action ){
-    switch(action.type){
+export default function ArticlesReducer(state = initalState, action){
+    switch(action.type) {
         case GET_POSTS:
             state = {...state, loadingPosts: true}
             break
 
         case GET_POSTS_OK:
-            state = {...state, loadingPosts: false, post: action.payload}
+            state = {...state, loadingPosts: false, posts: action.payload}
             break
 
         case GET_POSTS_FAIL:
-            state = {...state, loadingPosts: false, post:[], error: {message:action.payload}}
+            state = {...state, loadingPosts: false, posts:[], error: {message:action.payload}}
             break        
         
         default:

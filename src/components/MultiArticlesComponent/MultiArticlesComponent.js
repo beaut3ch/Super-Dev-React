@@ -10,7 +10,7 @@ const MultiArticlesComponent = () => {
     const dispatch = useDispatch()
     const {posts,loadingPosts} = useSelector((state)=> state.ArticlesReducer)
 
-     useEffect(()=>{
+     useEffect(()=>{ 
         dispatch(getPosts())
      },[])
 
@@ -32,9 +32,9 @@ const MultiArticlesComponent = () => {
                 <Card className='px-4 py-2 mb-3'>
                     <Card.Title>
                         {post.title}
-                        <Card.Text>
+                        <Card.Body>
                             {post.body}
-                        </Card.Text>
+                        </Card.Body>
                     </Card.Title>
                 </Card>
             )
