@@ -31,11 +31,11 @@ const MultiArticlesComponent = () => {
             return(
                 <Card className='px-4 py-2 mb-3'>
                     <Card.Title>
-                        {post.title}
+                            {post.title}
+                        </Card.Title>
                         <Card.Body>
                             {post.body}
                         </Card.Body>
-                    </Card.Title>
                 </Card>
             )
         })}
