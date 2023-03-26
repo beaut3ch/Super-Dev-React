@@ -20,7 +20,6 @@ const MultiArticlesComponent = () => {
                 <Bars
                 height={100}
                 width={100}>
-
                 </Bars>
             </Container>
         )
