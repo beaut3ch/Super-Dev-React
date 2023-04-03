@@ -33,7 +33,7 @@ export function getEvents(){
         dispatch(actionGetEvents())
     //como es asyncrona tiene que tener un await, y hacemos un 'if else' con el try-catch.El data es el array de post que pedimos en la api, ya que si solo ponemos el response, nos dará muuucha info.
         try{
-            const response = await axios.get("../../database.json")
+            const response = await axios.get("http://localhost:3000/events/loquesea")
             dispatch(actionGetEventsOk(response.data))
         }catch(error){
             dispatch(actionGetEventsFail(error))

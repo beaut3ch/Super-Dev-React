@@ -8,7 +8,7 @@ import LogoSuperDev from "../../assets/images/LogoSuperDev.png";
 
 const NavigationComponent = () => {
   return(
-    <Navbar bg="dark" variant="dark">
+    <Navbar >
       <Container>
       <Navbar.Brand href="#home">
       <img src={LogoSuperDev} width= "170" height="100" className="LogoSuperDev"
@@ -16,13 +16,13 @@ const NavigationComponent = () => {
           </Navbar.Brand>
         <Nav>
           <Link className="nav-link" to='/'> Home </Link>
-          <Link className="nav-link" to='/Shop'> Shop </Link>
-          <Link className="nav-link" to='/Articles'> Articles </Link>
-          <Link className="nav-link" to='/Events'> Events </Link>
-          <Link className="nav-link" to='/Music'> Music </Link>
-          <Link className="nav-link" to='/About Us'> About Us </Link>
-          <Link className="nav-link" to='/Horoscope'> Horoscope</Link>
-          <Link className="nav-link" to='/Login'> Login</Link>
+          <Link className="nav-link" to='/shop'> Shop </Link>
+          <Link className="nav-link" to='/articles'> Articles </Link>
+          <Link className="nav-link" to='/events'> Events </Link>
+          <Link className="nav-link" to='/music'> Music </Link>
+          <Link className="nav-link" to='/about-us'> About Us </Link>
+          <Link className="nav-link" to='/horoscope'> Horoscope</Link>
+          <Link className="nav-link" to='/login'> Login</Link>
         </Nav>
 
       </Container>
