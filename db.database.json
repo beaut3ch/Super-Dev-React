@@ -52,11 +52,11 @@
   "horoscopo": [
     {
       "id": "1",
-      "name": "Connect",
+      "name": "aries",
       "date": "14 de julio",
-      "location": "La Nave - el centro de innovación de Villaverde - Madrid",
-      "title": "Madrid acoge el evento más grande en España para programadores",
-      "description": "La III edición de Connect se celebrará el 14 de julio y en ella participarán más de 600 desarrolladores de toda España y teconocidos programadores internacionales, procedentes de Silicon Valley."
+      "sign": "poner foto del simbolito  urls",
+      "prediction": "Madrid acoge el evento más grande en España para programadores",
+      "tips": " Evita hacer cruds en lo que te queda de anhos."
     },
     {
       "id": "2",
